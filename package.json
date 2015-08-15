@@ -1,10 +1,17 @@
 {
   "name": "prettytime",
   "version": "0.1.0",
-  "description": "A micro library for converting millis into a human friendly format.",
+  "description": "A node micro library for converting millis into a human friendly format.",
   "main": "index.js",
   "scripts": {
     "test": "node_modules/.bin/mocha test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:scurker/prettytime.git"
+  },
+  "bugs": {
+    "url": "https://github.com/scurker/prettytime/issues"
   },
   "keywords": [
     "time",
