@@ -1,6 +1,6 @@
 {
   "name": "prettytime",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "A node micro library for converting millis into a human friendly format.",
   "main": "index.js",
   "scripts": {

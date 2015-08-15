@@ -1,7 +1,7 @@
 language: node_js
 node_js:
 - '0.12'
-- 'iojs'
+- iojs
 before_script:
 - npm install -g jshint
 script:
@@ -11,3 +11,12 @@ sudo: false
 cache:
   directories:
   - node_modules
+deploy:
+  provider: npm
+  email:
+    secure: a6xOjIGigbIT7XLVwSMmklrDsbPP0sSH5OTgqLp3PbzDQAV9EiMY3otCIvc8z18gel25sp48UO4mRkKgnvXO1qUucYNd9S66S3RQrellsDc0937sY9AKdkqdU3AKEX+nzZ5seB9iI1H8E2/1AMwhmF6fMNvGAnx/Jhzfzh91vvuc7pZ86yEN3Ahv6gE2sfROkfpvqOsk8Lg3/VwbU/OvHipu8Bg03FIBN89/KAQNnoAtlp4qKgCBer87J7XKRwQ0N9aBE/8ntmOHGtVlbEANYVyWRKf+ZkbJvBVbuJDweRpqxxd1H2PsGfBUi56PL32R/gJLxVW3YL0UYut/+rvcBUaOlsXJkFZwkDnFGg5jVytSP6+OBzAu1E92nTXSshyt0P74cHhiSDeU9UhUtqCh8xRv75wjqFnftHqC/WLc3j9P4REY7VTO0bVKOrWUWGxIOQdVX1Ht8GEhAiC/EY9IJBCgcsW9gj+Mj8qqIfL4jxouQ+Ojx0v6ZhKR+qeT/GIDN+IeM0Mw+xtjNlIbim4hdBUS0sJwCj+9OW/aJamjNjd9i83vfSJN5vuTFCi1yRs59ksvm3RO/qfkCiw/wVMCOASEVPzhpcWMCBc17f8RnyFHBOrPWu8XzdI69uKHXs1hbWVRc0Ou/Y8CdXJt733lxstA3hUkuNB0qXwMwNr2da4=
+  api_key:
+    secure: rh5Zg1wjgjI0vxh0Twx/hyKp4vTawQOq3ROo3iIt5pNXu9ZkkOnPdVyYsNAMxBbOOtHVWjFvdg/UM4oTLyUqN/W9HoZHrOkrZIB21Yae6nGd/qkcnb5QYa6nVT3x4oxGL7WGtQldTCeDTYENLLiQlggMpRHYNZydsxikIiH2LasgQ9q9bfRiSn/e0huu8RoW2PN7ohJABrKYwDY7SmcwoeYvOqyxNgA5e1fAMLxi3WN6a1v4qF2j8aW5x7j81uS6ULO6FAg75BwVwbqHvyRlXuyT3hHeaxQUeYYh7zqJ7hVIKrm7l9PSwv84gN6R/k5q/mNHVk2NAq8ueeioBGPER0N5Ln5sLKLtWwPxMjUVoiy/SWKcKEfPDM7IGMf1qvDo/RNDLSx0Va2GNXCI9VN2BoaBDj5CNllgs35xdLT3tNC3wb1zFlWYVeHj1SQzjp/e6MFjZuJvBmGZIqinWF4I8jNs5UU3itWnZaNebftbxPnx124cUw7amiS6/sUyTImhvIXL46YrpeZ9F/hfr9Uc56LhkSrpfF5X5UUXpGJKtDiRhwWpOaOjLPrrt+lrkeAX687GBHIJIwaqCzSMV0dvgRTi3c8/bWQQwv4p1F9ZvwTChB3q35o6ViADIWHv7HyatewRbkuwSuTOImNE/y4mjdPliym/sfF1lNIhBPCo2O4=
+  on:
+    tags: true
+    repo: scurker/prettytime
