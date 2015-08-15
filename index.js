@@ -25,6 +25,9 @@ function prettytime(value, options) {
 
   if (typeof value === 'string') {
     value = parseInt(value, 10);
+    if(isNaN(value)) {
+      return null;
+    }
   } else if (typeof value !== 'number') {
     return null;
   }

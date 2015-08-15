@@ -16,6 +16,7 @@ describe('prettytime', function() {
     assert.equal(prettytime(false), null);
     assert.equal(prettytime(function(){}), null);
     assert.equal(prettytime({}), null);
+    assert.equal(prettytime('not a number'), null);
   });
 
   it('should prettify years', function() {
@@ -64,6 +65,11 @@ describe('prettytime', function() {
     assert.equal(prettytime(-0), '0 ms');
     assert.equal(prettytime(-1), '1 ms');
     assert.equal(prettytime(-2), '2 ms');
+  });
+
+  it('should allow for comparison between two numbers', function() {
+    assert.equal(prettytime(1234 - 4321), '3.087 seconds');
+    assert.equal(prettytime(4321 - 1234), '3.087 seconds');
   });
 
 });
