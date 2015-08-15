@@ -1,0 +1,1 @@
+A micro library for converting millis into a human friendly format. Documentation to come soon.

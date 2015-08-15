@@ -1,0 +1,13 @@
+language: node_js
+node_js:
+- '0.12'
+- 'iojs'
+before_script:
+- npm install -g jshint
+script:
+- jshint . --exclude=node_modules
+- npm run test
+sudo: false
+cache:
+  directories:
+  - node_modules

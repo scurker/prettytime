@@ -1,0 +1,57 @@
+'use strict';
+
+var map = {
+  year:   31536000000,
+  month:  2592000000,
+  day:    86400000,
+  hour:   3600000,
+  minute: 60000,
+  second: 1000,
+  ms:     1
+};
+
+var short = {
+  year:   'y',
+  month:  'mo',
+  day:    'd',
+  hour:   'h',
+  minute: 'm',
+  second: 's',
+  ms:     'ms'
+};
+
+function prettytime(value, options) {
+  options = options || {};
+
+  if (typeof value === 'string') {
+    value = parseInt(value, 10);
+  } else if (typeof value !== 'number') {
+    return null;
+  }
+
+  value = Math.abs(value);
+
+  var unit;
+  Object.keys(map).some(function(key) {
+    var unitValue = map[key];
+    if (value >= unitValue) {
+      value = value / unitValue;
+      unit = key;
+      return true;
+    }
+  });
+
+  if (typeof options.decimals === 'number') {
+    value = Number(value.toFixed(options.decimals));
+  }
+
+  if (options.short) {
+    unit = short[unit];
+  } else if (value > 1 && unit !== 'ms') {
+    unit += 's';
+  }
+
+  return [value, unit].join(' ');
+}
+
+module.exports = prettytime;

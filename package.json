@@ -1,0 +1,22 @@
+{
+  "name": "prettytime",
+  "version": "0.1.0",
+  "description": "A micro library for converting millis into a human friendly format.",
+  "main": "index.js",
+  "scripts": {
+    "test": "node_modules/.bin/mocha test"
+  },
+  "keywords": [
+    "time",
+    "utilities",
+    "number",
+    "format",
+    "millis",
+    "milliseconds"
+  ],
+  "author": "Jason Wilson <jason@scurker.com>",
+  "license": "MIT",
+  "dependencies": {
+    "mocha": "^2.2.5"
+  }
+}
