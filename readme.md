@@ -69,4 +69,4 @@ prettytime(3600000, { short: true}); // => 1 h
 
 # License
 
-MIT © [Jason Wilson](scurker.com)
+MIT © [Jason Wilson](http://scurker.com)
