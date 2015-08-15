@@ -55,8 +55,15 @@ describe('prettytime', function() {
   });
 
   it('should prettify millis', function() {
+    assert.equal(prettytime(0), '0 ms');
     assert.equal(prettytime(1), '1 ms');
     assert.equal(prettytime(2), '2 ms');
+  });
+
+  it('should positify negative numbers', function() {
+    assert.equal(prettytime(-0), '0 ms');
+    assert.equal(prettytime(-1), '1 ms');
+    assert.equal(prettytime(-2), '2 ms');
   });
 
 });

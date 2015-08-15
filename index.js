@@ -34,9 +34,9 @@ function prettytime(value, options) {
   var unit;
   Object.keys(map).some(function(key) {
     var unitValue = map[key];
+    unit = key;
     if (value >= unitValue) {
       value = value / unitValue;
-      unit = key;
       return true;
     }
   });
