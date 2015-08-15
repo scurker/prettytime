@@ -1,4 +1,4 @@
-# Prettytime [![Build Status](https://travis-ci.org/scurker/prettytime.svg?branch=master)](https://travis-ci.org/scurker/prettytime)
+# Prettytime [![Build Status](https://travis-ci.org/scurker/prettytime.svg?branch=master)](https://travis-ci.org/scurker/prettytime) [![npm](https://img.shields.io/npm/v/prettytime.svg)](https://www.npmjs.com/package/prettytime)
 
 Prettytime is a micro library for converting millis (e.g. `prettytime(2342)`) into a human friendly format (e.g. `2.3 seconds`).
 
