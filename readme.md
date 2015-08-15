@@ -61,10 +61,10 @@ Converts the time type to a short string.
 #### Examples
 
 ```js
-prettytime(100, { short: true});     // => 100 ms
-prettytime(1000, { short: true});    // => 1 s
-prettytime(60000, { short: true});   // => 1 m
-prettytime(3600000, { short: true}); // => 1 h
+prettytime(100, { short: true });     // => 100 ms
+prettytime(1000, { short: true });    // => 1 s
+prettytime(60000, { short: true });   // => 1 m
+prettytime(3600000, { short: true }); // => 1 h
 ```
 
 # License
